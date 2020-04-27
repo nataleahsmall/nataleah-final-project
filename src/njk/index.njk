@@ -7,16 +7,29 @@
 {% block content %}
 <div class="container">
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-12">
       <h2>The Band</h2>
-      <p>This is a <a href="detail-entry-example.html">link to a blog entry example</a> which shows a simple detail entry page example. It uses the "data-entry.njk" layout.</p>
-      <p>This is a <a href="detail-book-shipping-news.html">link to a book page example</a> which uses a more complex detail layout (detail-book.njk) where data is pulled into the layout and the page calls for a specific row in the data.</p>
-      <ul> 
-        {% for member in queen.members %}
-          <li>{{ member.imagebw }}, {{ member.name }}</li>
-        {% endfor %}
-     </ul>
+      <p>Queen are a British rock band formed in London in 1970. Their classic line-up was Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), Roger Taylor (drums, vocals) and John Deacon (bass). Their earliest works were influenced by progressive rock, hard rock and heavy metal, but the band gradually ventured into more conventional and radio-friendly works by incorporating further styles, such as arena rock and pop rock.</p>
     </div>
   </div>
-</div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>The Performers</h2>
+      <ul> 
+        {% for member in queen.members %}
+          <li>{{ member.name }}, {{ member.instruments }}</li>
+        {% endfor %}
+     </ul>
+   </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>The Albums</h2>
+      <ul> 
+        {% for album in queen.discography %}
+          <li>{{ album.title }}, {{ album.year }}</li>
+        {% endfor %}
+     </ul>
+   </div>
+  </div>
 {% endblock %}

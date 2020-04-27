@@ -121,5 +121,39 @@
       "year": 1995,
       "image": "Queen_Made_in_Heaven.jpg"
     }
+  ],
+  "band members": [
+    {
+      "member": "Freddie Mercury",
+      "url": "freddie-mercury.html",
+      "title": "Freddie Mercury"
+    },
+    {
+      "member": "Brian May",
+      "url": "brian-may.html",
+      "title": "Brian May"
+    },
+    {
+      "member": "Roger Taylor",
+      "url": "roger-taylor.html",
+      "title": "Roger Taylor"
+    },
+    {
+      "member": "John Deacon",
+      "url": "john-deacon.html",
+      "title": "John Deacon"
+    }
+  ],
+  "hits and tours": [
+    {
+      "hits": "Billboard Hits",
+      "url": "billboard-hits.html",
+      "title": "Billboard Hits"
+    },
+    {
+      "tours": "Tour Dates",
+      "url": "tour-dates.html",
+      "title": "Tour Dates"
+    }
   ]
 }

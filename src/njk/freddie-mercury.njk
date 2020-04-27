@@ -1,0 +1,12 @@
+{% extends '_layouts/detail-entry.njk' %}
+
+{% set member = queen.members [0] %}
+
+{% block page_title %} {{ member.name }} {% endblock %}
+
+{% block description %} {{ member.instruments }}, {{member.tenure}}{% endblock %}
+
+{% block story %}
+  <h1>{{ member.name}}</h1>
+  <p>{{member.text}}</p>
+{% endblock %}
