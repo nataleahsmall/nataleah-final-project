@@ -1,10 +1,18 @@
 .jumbotron.banner {
   background: url(../img/queen-band-wallpaper-thin.jpg) no-repeat center;
   background-size: cover;
-  color: red;
-  padding-top: 12rem
+  
+  h1 {
+    font-size: 200px;
+    color: red;
+    font-family: 'Lobster', cursive;
+    
+  }
+  p{
+    font-size: 30px;
+    color: rgb(148, 48, 48);
+    font-family: 'Fjalla One', sans-serif;
+  }
 }
+  
 
-.jumbotron {
-  margin-bottom: 30px;
-}

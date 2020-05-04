@@ -4,16 +4,15 @@
 <article class="container">
   <div class="row">
     <div class="col-sm-4">
-      {% block info %}
-  <img src="img/q.png" alt="Queen logo" class="img-fluid">
+      {% block info %}  
+  <img src="img/members/{{member.image}}" alt="Queen logo" class="img-fluid">
   <p class="byline">{{member.name}}, <br>{{member.instruments}}<br>
   <span>{{member.tenure}}</span></p>
 {% endblock %}
     </div>
     <div class="col-sm-8">
       {% block story %}
-        <h1>{{ member.name }}</h1>
-  <img src="img/members/{{ member.image }}" class="img-fluid" alt="responsive image">
+      <h1>{{ member.name }}</h1>
   <p>{{ member.text | safe }} </p>
       {% endblock %}
     </div>
