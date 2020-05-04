@@ -12,8 +12,9 @@
     </div>
     <div class="col-sm-8">
       {% block story %}
-        <h1>Entry headline goes here</h1>
-        <p>Entry text goes here</p>
+        <h1>{{ member.name }}</h1>
+  <img src="img/members/{{ member.image }}" class="img-fluid" alt="responsive image">
+  <p>{{ member.text | safe }} </p>
       {% endblock %}
     </div>
   </div>

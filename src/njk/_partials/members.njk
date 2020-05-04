@@ -1,0 +1,15 @@
+<div class="row">
+ {% for member in queen.members %}
+  <div class="col-sm-6 col-md-3 mb-4">
+    <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="img/members/{{ member.imagebw }}" alt="Card image cap">
+      <div class="card-body">
+        <h3 class="card-title"><a href="{{ member.slug }}.html">{{ member.name }}</a></h3>
+        <p class="card-text">{{ member.instruments }}</p>
+      </div>
+    </div>
+    </div>
+  </div>
+    {% endfor %}
+</div>

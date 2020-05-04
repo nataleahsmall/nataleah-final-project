@@ -15,56 +15,21 @@
   <div class="row">
     <div class="col-sm-12">
       <h2>The Performers</h2>
-    <div class="row row-cols-1 row-cols-md-2">
-  <div class="col mb-4">
-    <div class="card">
-      <img src="img/members/freddie-mercury-color.jpg" class="card-img-top" alt="Freddie Mercury">
-      <div class="card-body">
-        <h5 class="card-title">Freddie Mercury</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <a href="freddie-mercury.html" class="btn btn-primary">Artist page</a>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card">
-      <img src="img/members/brian-may-color.jpg" class="card-img-top" alt="Brian May">
-      <div class="card-body">
-        <h5 class="card-title">Brian May</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <a href="brian-may.html" class="btn btn-primary">Artist page</a>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card">
-      <img src="img/members/roger-taylor-color.jpg" class="card-img-top" alt="Roger Taylor">
-      <div class="card-body">
-        <h5 class="card-title">Roger Taylor</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <a href="roger-taylor.html" class="btn btn-primary">Artist page</a>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card">
-      <img src="img/members/john-deacon-color.jpg" class="card-img-top" alt="John Deacon">
-      <div class="card-body">
-        <h5 class="card-title">John Deacon</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <a href="john-deacon.html" class="btn btn-primary">Artist page</a>
-      </div>
-    </div>
-  </div>
-</div> 
-   </div>
-  </div>
+    {% include "_partials/members.njk" %}
   <div class="row">
     <div class="col-sm-12">
       <h2>The Albums</h2>
       <ul> 
         {% for album in queen.discography %}
-          <li>{{ album.title }}, {{ album.year }}</li>
+          <ul class="list-unstyled">
+  <li class="media">
+    <img class="mr-3" src="img/discs/{{ album.image }}" alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">{{ album.title }}</h5>
+      {{ album.year }}
+    </div>
+  </li>
+</ul>
         {% endfor %}
      </ul>
    </div>
