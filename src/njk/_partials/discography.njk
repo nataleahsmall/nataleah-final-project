@@ -1,0 +1,12 @@
+<div class="row">
+{% for album in queen.discography %}
+<div class="col-sm-6 col-md-4">
+  <div class="card">
+    <img src="img/discs/{{ album.image }}" class="card-img-top" alt="Album Cover">
+    <div class="card-body">
+      <p class="card-text">{{ album.title }}, {{ album.year }}</p>
+    </div>
+  </div>
+</div>
+{% endfor %}
+</div>
