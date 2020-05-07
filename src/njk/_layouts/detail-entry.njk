@@ -6,8 +6,11 @@
     <div class="col-sm-4">
       {% block info %}  
   <img src="img/members/{{member.image}}" alt="Queen logo" class="img-fluid">
-  <p class="byline">{{member.name}}, <br>{{member.instruments}}<br>
-  <span>{{member.tenure}}</span></p>
+  <p class="byline"><b>Name:</b> {{member.name}} <br><b>Instruments:</b> {{member.instruments}}<br>
+  <span><b>Band Tenure:</b> {{member.tenure}}</span>
+  <br><b>Birthplace: </b>{{member.birthplace}}<br>
+  <span><b>Birtdate:</b> {{member.birthdate}}</span> 
+  </p>
 {% endblock %}
     </div>
     <div class="col-sm-8">
